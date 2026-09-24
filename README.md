@@ -8,7 +8,7 @@ Das Modell ist der Mehrgüterfluss der Vorgänger, aber jede Lane und jedes Vert
 Die Demo misst, wie schwach die Schranke ist, und was zwei Verbesserungen bringen: die **starke Kopplung** $x^k_e\le\min(u_e,d_k)\,y$ je Gut und **Schnittungleichungen** aus den Min-Cuts des Netzes (gekappt und mit Chvátal-Gomory gerundet) – und, am Ende, was das für die Größe des Suchbaums bedeutet.
 Vehikel: das Distributionsnetz der Vorgänger (Standard, Seed 155), ein **Streckennetz** (Gitter mit Start-Ziel-Aufträgen) und drei feste Lehrnetze (Big-M-Falle, Rundungs-Falle, Bündelung), an denen sich je ein Effekt von Hand nachrechnen lässt.
 
-**Einordnung in die Reihe (die Kanten des Graphen):** Das Mehrgütermodell (Flusserhaltung je Gut, gemeinsame Kapazität) stammt aus [multicommodity-demo](https://github.com/sebastian-hanisch/multicommodity-demo); neu ist die Entwurfsentscheidung. Verwandt: [linehaul-demo](https://github.com/sebastian-hanisch/linehaul-demo) hat **dasselbe Modell** (Fixed-Charge-Multicommodity-Network-Design), vergleicht dort aber Heuristiken gegen das SCIP-Optimum – hier steht die *Schranke* im Mittelpunkt und was Schnitte an ihr ändern. Schnittebenen am Rucksack zeigen [cutting-planes-demo](https://github.com/sebastian-hanisch/cutting-planes-demo) und [branch-cut-demo](https://github.com/sebastian-hanisch/branch-cut-demo); hier sind es Schnitte aus der **Netzstruktur** (Knotenmengen, Min-Cuts). Die Folgestücke: **Benders-Zerlegung** (Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (Heuristik für große Netze). Bisher gebaut: die ersten zehn Stücke.
+**Einordnung in die Reihe (die Kanten des Graphen):** Das Mehrgütermodell (Flusserhaltung je Gut, gemeinsame Kapazität) stammt aus [multicommodity-demo](https://github.com/sebastian-hanisch/multicommodity-demo); neu ist die Entwurfsentscheidung. Verwandt: [linehaul-demo](https://github.com/sebastian-hanisch/linehaul-demo) hat **dasselbe Modell** (Fixed-Charge-Multicommodity-Network-Design), vergleicht dort aber Heuristiken gegen das SCIP-Optimum – hier steht die *Schranke* im Mittelpunkt und was Schnitte an ihr ändern. Schnittebenen am Rucksack zeigen [cutting-planes-demo](https://github.com/sebastian-hanisch/cutting-planes-demo) und [branch-cut-demo](https://github.com/sebastian-hanisch/branch-cut-demo); hier sind es Schnitte aus der **Netzstruktur** (Knotenmengen, Min-Cuts). Das Folgestück **Benders-Zerlegung** ist gebaut ([benders-demo](https://github.com/sebastian-hanisch/benders-demo): Entwurf im Master, Fluss im Teilproblem), danach kommt **Slope Scaling** (Heuristik für große Netze). Bisher gebaut: die ersten elf Stücke.
 ```
 edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)                  [gebaut]
   ├─ dinic-demo (viele kürzeste Wege je Phase: Niveaugraph, blockierender Fluss)        [gebaut]
@@ -21,7 +21,7 @@ edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)          
             ├─ mcf-column-generation-demo (Pfade als Spalten, Pricing = Dijkstra)       [gebaut]
             ├─ garg-koenemann-demo (Näherung mit Preisen, ohne LP-Löser)                [gebaut]
             └─ fixkosten-netzdesign-demo (Fixkosten: Schranke und Schnitte)             [dieses Stück]
-                 ├─ Benders-Zerlegung (Entwurf im Master, Fluss im Teilproblem)         [geplant]
+                 ├─ benders-demo (Entwurf im Master, Fluss im Teilproblem)              [gebaut]
                  └─ Slope Scaling (Heuristik für große Netze)                           [geplant]
 ```
 

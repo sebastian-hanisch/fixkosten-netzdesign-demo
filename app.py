@@ -69,7 +69,7 @@ Diese Demo misst, wie schwach sie ist, und was zwei Verbesserungen bringen: eine
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - zehntes Stück der Netzwerkfluss-Linie der \"Konzepte\"-Reihe, erstes im Netzwerkdesign-Ast - **eine Frage** an einem wachsenden Beispiel. "
     "Verwandt: [linehaul-demo](https://github.com/sebastian-hanisch/linehaul-demo) (dasselbe Modell, dort Heuristiken gegen SCIP) und die Schnittebenen am Rucksack in cutting-planes-demo und branch-cut-demo. "
-    "Die Folgestücke: **Benders-Zerlegung** und **Slope Scaling** (Heuristik für große Netze)."
+    "Die Folgestücke: **Benders-Zerlegung** (gebaut: [benders-demo](https://github.com/sebastian-hanisch/benders-demo)) und **Slope Scaling** (Heuristik für große Netze)."
 )
 
 with st.expander("So entsteht die Schranke", expanded=True):
@@ -363,10 +363,10 @@ st.markdown(
 | **Trennung ist eine Heuristik** | Die exakte Trennung über alle Knotenmengen wächst exponentiell (Experiment); die Restlücke ist zum Teil ein Trennungsfehler. |
 | **Cut-and-Branch** | Schnitte nur an der Wurzel; ein echtes Branch-and-Cut (`branch-cut-demo` am Rucksack) schneidet in jedem Knoten. |
 | **Feste Nachfrage, ein Zeitpunkt** | Fixkosten gelten je Kante und Tag; wer Fahrpläne plant, braucht ein Zeit-Raum-Netz (`leercontainer-demo`). |
-| **Alles auf einmal lösen** | Große Netze lösen das MIP nicht mehr direkt. **Ansatzpunkt:** **Benders-Zerlegung** (Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (Heuristik) - die beiden Folgestücke. |
+| **Alles auf einmal lösen** | Große Netze lösen das MIP nicht mehr direkt. **Ansatzpunkt:** **Benders-Zerlegung** (gebaut: benders-demo; Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (Heuristik) - die Folgestücke. |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung und Slope Scaling.")
+st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung (gebaut) und Slope Scaling.")
 
 st.markdown("---")
 
