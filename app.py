@@ -363,10 +363,10 @@ st.markdown(
 | **Trennung ist eine Heuristik** | Die exakte Trennung über alle Knotenmengen wächst exponentiell (Experiment); die Restlücke ist zum Teil ein Trennungsfehler. |
 | **Cut-and-Branch** | Schnitte nur an der Wurzel; ein echtes Branch-and-Cut (`branch-cut-demo` am Rucksack) schneidet in jedem Knoten. |
 | **Feste Nachfrage, ein Zeitpunkt** | Fixkosten gelten je Kante und Tag; wer Fahrpläne plant, braucht ein Zeit-Raum-Netz (`leercontainer-demo`). |
-| **Alles auf einmal lösen** | Große Netze lösen das MIP nicht mehr direkt. **Ansatzpunkt:** **Benders-Zerlegung** (gebaut: benders-demo; Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (Heuristik) - die Folgestücke. |
+| **Alles auf einmal lösen** | Große Netze lösen das MIP nicht mehr direkt. **Ansatzpunkt:** **Benders-Zerlegung** (gebaut: benders-demo; Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (gebaut: slope-scaling-demo; Heuristik) - die Folgestücke. |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung (gebaut) und Slope Scaling.")
+st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung (gebaut) und Slope Scaling (gebaut).")
 
 st.markdown("---")
 
