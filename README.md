@@ -1,6 +1,6 @@
 # Fixkosten-Netzdesign – warum die Schranke schwach ist – Streamlit-Demo
 
-*(noch nicht deployed)*
+**[→ Demo live ausprobieren](https://sebastianhanisch-fixkosten-netzdesign-demo.streamlit.app/)**
 
 Zehntes Stück der **Netzwerkfluss-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", erstes im Netzwerkdesign-Ast:
 anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **eine Frage** – **warum ist die LP-Schranke beim Netzwerkdesign mit Fixkosten so schwach, und was ändern stärkere Formulierung und Schnitte?** – an einem wachsenden Beispiel.
