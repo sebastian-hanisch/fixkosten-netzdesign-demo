@@ -69,7 +69,7 @@ Diese Demo misst, wie schwach sie ist, und was zwei Verbesserungen bringen: eine
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - zehntes Stück der Netzwerkfluss-Linie der \"Konzepte\"-Reihe, erstes im Netzwerkdesign-Ast - **eine Frage** an einem wachsenden Beispiel. "
     "Verwandt: [linehaul-demo](https://github.com/sebastian-hanisch/linehaul-demo) (dasselbe Modell, dort Heuristiken gegen SCIP) und die Schnittebenen am Rucksack in cutting-planes-demo und branch-cut-demo. "
-    "Die Folgestücke: **Benders-Zerlegung** (gebaut: [benders-demo](https://github.com/sebastian-hanisch/benders-demo)) und **Slope Scaling** (Heuristik für große Netze)."
+    "Die Folgestücke: **Benders-Zerlegung** (gebaut: [benders-demo](https://github.com/sebastian-hanisch/benders-demo)) und **Slope Scaling** (gebaut: [slope-scaling-demo](https://github.com/sebastian-hanisch/slope-scaling-demo); Heuristik für große Netze)."
 )
 
 with st.expander("So entsteht die Schranke", expanded=True):
@@ -391,6 +391,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Netzwerkfluss: vom Max-Flow zum Netzdesign](https://sebastianhanisch.net/konzepte-netzwerkfluss.html)."
 )

@@ -106,3 +106,7 @@ venv/Scripts/python -m pytest tests/ -v
 ```
 
 Die Tests laufen einige Minuten (App-Tests durchlaufen jedes Preset und jede Kombination von Kopplung und Schnittform; die Behauptungen rechnen die festen Netze).
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Netzwerkfluss: vom Max-Flow zum Netzdesign](https://sebastianhanisch.net/konzepte-netzwerkfluss.html).
