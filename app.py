@@ -366,7 +366,7 @@ st.markdown(
 | **Alles auf einmal lösen** | Große Netze lösen das MIP nicht mehr direkt. **Ansatzpunkt:** **Benders-Zerlegung** (gebaut: benders-demo; Entwurf im Master, Fluss im Teilproblem) und **Slope Scaling** (gebaut: slope-scaling-demo; Heuristik) - die Folgestücke. |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung (gebaut) und Slope Scaling (gebaut).")
+st.caption("Die Netzwerkfluss-Linie umfasst: Edmonds-Karp, Dinic, Push-Relabel, Successive Shortest Paths, Cycle-Canceling, Cost Scaling, Netzwerksimplex, Mehrgüterfluss, Column Generation, Garg-Könemann, Fixkosten-Netzwerkdesign (dieses Stück), Benders-Zerlegung (gebaut) und Slope Scaling (gebaut).")
 
 st.markdown("---")
 
