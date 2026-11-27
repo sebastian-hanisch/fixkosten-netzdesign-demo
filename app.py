@@ -167,8 +167,12 @@ sync_query_params({"net_select": net_key, "k_slider": int(K), "p_slider": int(p)
 
 params = ev.normalise(ev.NetParams(net_key, int(K), int(p), int(d), int(s), int(density), int(spread), int(load), int(fix), int(seed), int(gw), int(gh), int(gdensity), int(gcap), int(gdem), int(gseed)))
 opts = ev.Opts(coupling, cuts_mode)
-with st.spinner("Rechne..."):
-    a = _analysis(params, opts)
+try:
+    with st.spinner("Rechne..."):
+        a = _analysis(params, opts)
+except ev.fm.NotProven as fehler:
+    st.error(str(fehler))
+    st.stop()
 design = a.design
 level, code, dat = ev.verdict(a)
 is_fixed = net_key in C.FIXED_NETS
